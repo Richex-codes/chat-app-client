@@ -1,0 +1,124 @@
+/* ChatWindow.css */
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    width: 70%;
+  }
+  
+  .chat-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .chat-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .chat-header h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .chat-header p {
+    color: #888;
+    margin: 0;
+  }
+  
+  .chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .message.sent span{
+    text-align: right;
+    font-size: 8px;
+    margin: 0;
+  }
+
+  .message.received span{
+    text-align: left;
+    font-size: 8px;
+    margin: 0;
+  }
+
+  .message.received p{
+    margin: 0;
+  }
+
+  .message.sent p{
+    margin: 0;
+  }
+
+  
+  .message.received {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    background-color: #f0f0f0;
+    width: fit-content; /* Adjusts the width based on content */
+    max-width: 70%; /* Ensures the message doesn't take more than 70% of the container width */
+}
+
+.message.sent {
+  display: flex;
+  flex-direction: column;
+    align-self: flex-end;
+    background-color: #d1e7ff;
+    width: fit-content; /* Adjusts the width based on content */
+    max-width: 70%; /* Ensures the message doesn't take more than 70% of the container width */
+}
+  
+  .attachment-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .chat-input {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .chat-input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .button-check {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    width: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+
+  .emoji{
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  

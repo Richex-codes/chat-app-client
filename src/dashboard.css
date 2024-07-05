@@ -1,0 +1,27 @@
+/* Dashboard.css */
+.dashboard {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    background-color: #f0f0f0;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .chat-window {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+  }
+  
+  .user-profile {
+    background-color: #f0f0f0;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  

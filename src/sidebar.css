@@ -1,0 +1,73 @@
+/* Sidebar.css */
+.sidebar {
+    background-color: #f0f0f0;
+    padding: 20px;
+    overflow-y: auto;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure the sidebar takes full height */
+    justify-content: space-between;
+  }
+  
+  .sidebar .profile {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .sidebar .profile h2 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+  }
+  
+  .sidebar .profile p {
+    color: #888;
+  }
+  
+  .sidebar .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .sidebar .chat-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Allows the chat list to take remaining space */
+    overflow-y: auto;
+  }
+
+  .logout-button {
+    margin-top: auto; /* Pushes the logout button to the bottom */
+    padding: 10px; /* Optional styling for button container */
+}
+  
+  .sidebar .chat-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar .chat-item:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .chat-messages .received .typing-indicator {
+    height: 0;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .chat-messages .received.typing .typing-indicator {
+    height: auto;
+    opacity: 1;
+  }
+ 

@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.landing-page {
+  text-align: center;
+}
+
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin-left: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background-color: #007bff;
+  color: white;
+  padding: 100px 20px;
+}
+
+.cta-button {
+  background-color: #03dac6;
+  color: #007bff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #02c1a1;
+}
+
+.features,
+.about,
+.contact {
+  padding: 60px 20px;
+}
+
+.features h2,
+.about h2,
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 300px;
+}
+
+.footer {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 0;
+}
