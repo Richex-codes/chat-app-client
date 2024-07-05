@@ -19,6 +19,7 @@ function App() {
         <Route element={<PrivateRoute/>}>
           <Route path='/dashboard' element={<Dashboard />} /> 
         </Route>
+        <Route path='*' element={<HomePage />} />
       </Routes>
     </div>
     
