@@ -5,13 +5,35 @@
     background-color: #fff;
     padding: 20px;
     width: 70%;
+    position: relative;
   }
   
   .chat-header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
   }
+
+  .react-emoji{
+    width: 10%;
+  }
+
+  .react-input-emoji--button:hover{
+    color: transparent;
+  }
+
+  .chat-header .icon-back {
+    font-size: 30px;
+    cursor: pointer;
+    transition: font-size 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  }
+  .chat-header .icon-back:hover {
+    font-size: 32px;
+    color: #007bff; 
+    background-color: #f0f0f0; 
+  }
+  
   
   .chat-header img {
     width: 50px;
@@ -97,8 +119,27 @@
     display: flex;
     align-items: center;
     margin-top: 20px;
+    position: relative;
   }
-  
+
+  .emoji-container {
+    position: relative;
+  }
+
+  .emoji {
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .emoji-picker {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    z-index: 1000;
+  }
+
   .chat-input input {
     padding: 10px;
     border: 1px solid #ccc;
@@ -115,10 +156,5 @@
     cursor: pointer;
   }
 
-  .emoji{
-    margin-right: 10px;
-    margin-left: 10px;
-    font-size: 30px;
-    cursor: pointer;
-  }
+ 
   

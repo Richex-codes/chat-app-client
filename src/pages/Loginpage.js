@@ -17,7 +17,7 @@ export default function Loginpage(){
         console.log('User logged in successfully:', response.data);
         const { token } = response.data;
         localStorage.setItem('token', token);
-        navigate('/dashboard'); 
+        navigate('/chat'); 
       } catch (error) {
         if (error.response && error.response.status === 401) {
           setErrorMessage('Invalid email or password');

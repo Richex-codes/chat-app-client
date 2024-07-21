@@ -1,11 +1,11 @@
 
 import './App.css';
-import './register.css';
-import './login.css'
-import Register from './components/Register';
-import HomePage from './components/Homepage';
-import Loginpage from './components/Loginpage';
-import Dashboard from './Dashboard';
+import './styles/register.css';
+import './styles/login.css';
+import Register from './pages/Register';
+import HomePage from './pages/Homepage';
+import Loginpage from './pages/Loginpage';
+import Chat from './pages/Chat';
 import PrivateRoute from './components/PrivateRoute';
 import { Route, Routes } from 'react-router-dom';
 
@@ -17,7 +17,7 @@ function App() {
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Loginpage />} />
         <Route element={<PrivateRoute/>}>
-          <Route path='/dashboard' element={<Dashboard />} /> 
+          <Route path='/chat' element={<Chat />} /> 
         </Route>
         <Route path='*' element={<HomePage />} />
       </Routes>

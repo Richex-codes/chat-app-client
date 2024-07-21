@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import Spinner from './Spinner'
+import Spinner from '../components/Spinner';
 
 const Register = () => {
   const navigate = useNavigate();
@@ -28,19 +28,25 @@ const Register = () => {
         setLoading(true);
         // Add your own form submission logic here, like sending data to the server or using an API
         try {
-          const response = await axios.post('http://localhost:3001/users', formData);
+          const response = await axios.post('http://localhost:3001/register', formData);
           console.log('User registered successfully:', response.data);
           setSuccessMessage('User registered successfully!');
           setTimeout(() => {
             navigate('/login');
           }, 2000); // Redirect to the login page after 2 seconds
         } catch (error) {
-          if (error.response && error.response.status === 400) {
+          if (error.response && error.response.status === 401) {
             setSuccessMessage('This email exists');
             setTimeout(() => {
               setSuccessMessage(''); 
             }, 1500); //
-          } else {
+          } if(error.response && error.response.status === 402){
+            setSuccessMessage('Invalid email or password');
+            setTimeout(() => {
+              setSuccessMessage(''); 
+            }, 1500); //
+          }
+          else {
             setSuccessMessage('Error registering user');
             setTimeout(() => {
               setSuccessMessage(''); 
